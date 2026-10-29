@@ -15,7 +15,7 @@ My background includes enterprise SaaS, data and API sales, international market
 | --- | --- | --- |
 | Enterprise API & data sales — Webz.io | $2.5M+ closed revenue; 118% average quota attainment; $3.5M+ self-generated pipeline | Career-history figures; not independently audited in this repository |
 | Enterprise SaaS — Guesty | $1.5M+ closed revenue; 112% average quota attainment | Career-history figures; not independently audited in this repository |
-| CRM relationship verification | 23 test cases visible in current source; execution not rerun in this review; read-only Cloudflare Worker | Sanitized public code and tests; not certified as a production deployment |
+| CRM relationship verification | 41/41 tests independently reproduced offline on 2026-10-29 (23 top-level test declarations); read-only Cloudflare Worker | Sanitized public code and tests; not certified as a production deployment |
 | Revenue intake controls | 8 documented passing local tests; Python synthetic-data prototype | No live CRM or outbound automation claimed |
 | JOEL X career research | 48/48 offline tests on pinned private baseline | External calls and model responses mocked |
 | JARVIS / Hermes | Recovered session reports successful authorized Groq model inference | Generated tool call was not completed; no end-to-end autonomy claimed |
@@ -29,7 +29,7 @@ A read-only verification layer for CRM Property–Contact–Opportunity associat
 
 - Explicit identity and relationship matching; human-review path for ambiguity.
 - Bounded API calls, pagination checks, and credential-safe decision logging.
-- **Evidence:** 23 test cases visible in current source; execution not rerun in this review.
+- **Evidence:** 41/41 tests independently reproduced offline on 2026-10-29 (23 top-level test declarations).
 - [Architecture and source](https://github.com/JoelGPascal/crm-association-verifier) · [Commercial context](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/COMMERCIAL_CONTEXT.md)
 
 ### [Revenue Intake — Safe Listing Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
