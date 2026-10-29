@@ -42,3 +42,19 @@ I am **designing and building** AI-assisted GTM research, qualification and mult
 - [Notion — Enterprise GTM, AI & Multi-Agent Revenue Systems Portfolio](https://twisty-ethernet-39b.notion.site/Joel-Pascal-Enterprise-GTM-AI-Multi-Agent-Revenue-Systems-b8c350de9f0d83678678018727dd0d54)
 
 *Portfolio projects are sanitized. Production customer data, credentials, confidential workflows and private repositories are not shared.*
+
+## Agentic AI and career intelligence — documented checkpoints
+
+### JARVIS — private agent infrastructure (public case study)
+
+- Explored Hermes Agent v0.21.5, FreeLLMAPI v0.16.10, and Groq-backed `openai/gpt-oss-120b` inference with explicit tool-permission boundaries.
+- **October 28, 2026 checkpoint:** recovered Codespaces session evidence reports one successful authorized live model inference request. The model generated a tool call, but that tool call was **not executed to completion**.
+- **Limit:** live inference does not establish end-to-end autonomous execution or production deployment. Implementation and credentials remain private.
+
+### JOEL X — private career-research prototype (public case study)
+
+- Python public-job-board ingestion, normalization, deduplication, eligibility checks, three-track ranking, and human-review shortlisting.
+- **Evidence:** 48/48 offline tests passed on a pinned code baseline in an isolated environment; external network and model calls were mocked.
+- **Limit:** not a live autonomous job applicant or production deployment. CV inputs and private reports remain private.
+
+**Engineering approach:** evidence provenance, read-only-first integrations, explicit human approvals, and sanitized public demonstrations.
