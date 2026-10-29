@@ -1,60 +1,85 @@
 # Joel Gabriel Pascal
+### Enterprise GTM & Strategic Sales · AI Solutions · Revenue Systems Engineering
 
-**Enterprise GTM & Strategic Sales | AI | SaaS | APIs | Data | Revenue Systems**
+I work at the intersection of **enterprise commercial execution and practical software engineering**: translating customer and operating problems into measurable workflows, API integrations, verification controls, and responsible AI-assisted systems.
 
-I am an enterprise technology seller and GTM builder with experience translating complex SaaS, API and data products into commercial value, developing international markets, generating pipeline and navigating technical buying groups. My background includes **$4M+ in technology revenue** across Webz.io and Guesty, alongside founder-led work designing CRM, verification and AI-enabled revenue workflows.
+My background includes enterprise SaaS, data and API sales, international market development, and founder-led operations. I build and document technical prototypes to demonstrate how those disciplines connect.
 
-My focus is the intersection of **enterprise commercial execution and practical AI systems**: turning business requirements into reliable processes, structured data, technical handoffs and measurable operating evidence.
+**Focus:** Enterprise AI GTM · Solutions / Forward-Deployed Engineering development · CRM & Revenue Automation · Python · APIs · Agentic AI
 
-## Commercial experience
+---
 
-- **Webz.io:** enterprise API/data and intelligence sales; **$2.5M+ revenue**, **118% quota attainment**, **$3.5M+ self-generated pipeline**.
-- **Guesty:** international SaaS GTM and enterprise selling; **$1.5M+ revenue**, **112% quota attainment**, French-market development and partner-led growth.
-- **Founder/operator:** GTM ownership, pipeline development, CRM architecture, qualification workflows, partner and buyer processes, and automation design.
+## Selected evidence
 
-## Public technical portfolio
+| Area | Documented result | Evidence boundary |
+| --- | --- | --- |
+| Enterprise API & data sales — Webz.io | $2.5M+ closed revenue; 118% average quota attainment; $3.5M+ self-generated pipeline | Career-history figures; not independently audited in this repository |
+| Enterprise SaaS — Guesty | $1.5M+ closed revenue; 112% average quota attainment | Career-history figures; not independently audited in this repository |
+| CRM relationship verification | 41 documented passing tests; read-only Cloudflare Worker | Sanitized public code and tests; not certified as a production deployment |
+| Revenue intake controls | 8 documented passing local tests; Python synthetic-data prototype | No live CRM or outbound automation claimed |
+| JOEL X career research | 48/48 offline tests on pinned private baseline | External calls and model responses mocked |
+| JARVIS / Hermes | Recovered session reports successful authorized Groq model inference | Generated tool call was not completed; no end-to-end autonomy claimed |
+
+## Public engineering work
 
 ### [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier)
-A sanitized, **read-only Cloudflare Worker** for verifying Property–Contact–Opportunity associations before downstream CRM automation is trusted. Uses exact identity checks, fail-closed decisions and human-review boundaries.
+**Cloudflare Workers · JavaScript · REST APIs · Data integrity · Defensive engineering**
 
-**Evidence:** 41 passing unit tests documented in the repository. **Status:** built and tested; full live production certification **not established**.
+A read-only verification layer for CRM Property–Contact–Opportunity associations. Designed to **fail closed** when identities, relationships, pagination, or upstream evidence cannot be trusted.
 
-[Technical repository](https://github.com/JoelGPascal/crm-association-verifier) · [Commercial context](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/COMMERCIAL_CONTEXT.md)
+- Explicit identity and relationship matching; human-review path for ambiguity.
+- Bounded API calls, pagination checks, and credential-safe decision logging.
+- **Evidence:** 41 documented passing unit tests.
+- [Architecture and source](https://github.com/JoelGPascal/crm-association-verifier) · [Commercial context](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/COMMERCIAL_CONTEXT.md)
 
-### [Python Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
-A **synthetic-data-only** Python prototype for normalizing third-party listing records, preserving source identity, flagging unverified values and requiring human review before distribution.
+### [Revenue Intake — Safe Listing Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
+**Python · Data normalization · Provenance · Human approval gates**
 
-**Evidence:** eight locally passing synthetic-data tests documented in the repository. **Status:** prototype; not a live CRM integration, outbound campaign or deployed revenue engine.
+A synthetic-data prototype that converts third-party property listing inputs into **review-required records**, without treating unverified listings, ARV estimates, or contact permissions as established facts.
 
-[Technical repository](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [Commercial context](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/COMMERCIAL_CONTEXT.md)
+- Stable source identity, explicit unverified fields, and conservative default decisions.
+- No scraping, live CRM writes, or outbound marketing in this public demo.
+- **Evidence:** 8 documented passing local tests.
+- [Source and methodology](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [Commercial context](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/COMMERCIAL_CONTEXT.md)
 
-## Currently developing
+## Private development — public technical summaries
 
-I am **designing and building** AI-assisted GTM research, qualification and multi-agent revenue-system architectures, including NVIDIA-oriented agentic AI exploration. These are **works in progress**, not claims of deployed production systems. My learning priorities include Python, APIs, structured data, tool use, evaluation, guardrails, human-in-the-loop controls and enterprise AI deployment.
+### JARVIS — Agentic AI infrastructure
+**Hermes Agent · FreeLLMAPI · Groq · Model routing · Permission boundaries**
 
-## Career direction
+Private infrastructure work exploring controlled agent orchestration and model access. The October 28, 2026 Codespaces handoff reports Hermes Agent v0.21.5, FreeLLMAPI v0.16.10, and a **successful authorized inference request** using Groq's `openai/gpt-oss-120b`. The model generated a tool call, but **tool execution was not completed**. This is a live inference checkpoint, **not** proof of a production autonomous agent.
 
-**Enterprise AI GTM & Deployment Leadership** — bridging enterprise buyers, product and technical teams, AI adoption and responsible commercial execution. My primary identity remains **enterprise GTM and strategic sales**, supported by practical systems-building capability.
+### JOEL X — Career intelligence prototype
+**Python · Job-board ingestion · Deduplication · Eligibility rules · Ranking · Human review**
+
+Private prototype for public job-board research across three career tracks: Enterprise Sales & GTM; AI Solutions & Agentic Engineering; and GTM Engineering & CRM Automation. **48/48 offline tests** passed on a pinned code baseline; network/model interactions were mocked. No automatic applications or live autonomous operation are claimed.
+
+## How I approach engineering
+
+```mermaid
+flowchart LR
+    A["Business requirement"] --> B["Data provenance + validation"]
+    B --> C["Deterministic controls"]
+    C --> D{"Evidence sufficient?"}
+    D -->|Yes| E["Approved next step"]
+    D -->|No| F["Human review"]
+    E --> G["Logged outcome"]
+    F --> G
+```
+
+I prioritize **verifiable behavior over impressive-sounding claims**: smallest useful prototypes, clear boundaries, conservative defaults, and human authorization for consequential actions.
+
+## Professional background
+
+- **Webz.io:** Enterprise API, data, and intelligence solutions; complex sales cycles and strategic accounts.
+- **Guesty:** Enterprise SaaS sales and international go-to-market development.
+- **Pascal Dominion Holdings:** Founder-led U.S. real-estate operations and revenue-workflow design.
+
+**Career direction:** Enterprise AI GTM, AI Solutions Engineering, Forward-Deployed Engineering development, and GTM/Revenue Systems Engineering.
 
 ## Connect
 
 - [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/)
-- [Notion — Enterprise GTM, AI & Multi-Agent Revenue Systems Portfolio](https://twisty-ethernet-39b.notion.site/Joel-Pascal-Enterprise-GTM-AI-Multi-Agent-Revenue-Systems-b8c350de9f0d83678678018727dd0d54)
+- [GitHub projects](https://github.com/JoelGPascal)
 
-*Portfolio projects are sanitized. Production customer data, credentials, confidential workflows and private repositories are not shared.*
-
-## Agentic AI and career intelligence — documented checkpoints
-
-### JARVIS — private agent infrastructure (public case study)
-
-- Explored Hermes Agent v0.21.5, FreeLLMAPI v0.16.10, and Groq-backed `openai/gpt-oss-120b` inference with explicit tool-permission boundaries.
-- **October 28, 2026 checkpoint:** recovered Codespaces session evidence reports one successful authorized live model inference request. The model generated a tool call, but that tool call was **not executed to completion**.
-- **Limit:** live inference does not establish end-to-end autonomous execution or production deployment. Implementation and credentials remain private.
-
-### JOEL X — private career-research prototype (public case study)
-
-- Python public-job-board ingestion, normalization, deduplication, eligibility checks, three-track ranking, and human-review shortlisting.
-- **Evidence:** 48/48 offline tests passed on a pinned code baseline in an isolated environment; external network and model calls were mocked.
-- **Limit:** not a live autonomous job applicant or production deployment. CV inputs and private reports remain private.
-
-**Engineering approach:** evidence provenance, read-only-first integrations, explicit human approvals, and sanitized public demonstrations.
+*This profile distinguishes public source evidence, offline tests, recovered session reports, and personal career-history claims. Private customer information, credentials, and internal repositories are intentionally excluded.*
