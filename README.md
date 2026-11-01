@@ -1,85 +1,59 @@
 # Joel Gabriel Pascal
-### Enterprise GTM & Strategic Sales · AI Solutions · Revenue Systems Engineering
+### Enterprise sales and market building | Practical AI and revenue systems
 
-I work at the intersection of **enterprise commercial execution and practical software engineering**: translating customer and operating problems into measurable workflows, API integrations, verification controls, and responsible AI-assisted systems.
+I help buyers evaluate complex technology and turn new markets into sales opportunities. My background spans enterprise SaaS, APIs and data, French-market development and founder-led commercial operations.
 
-My background includes enterprise SaaS, data and API sales, international market development, and founder-led operations. I build and document technical prototypes to demonstrate how those disciplines connect.
+At Webz.io, I closed **$2.5M+ in API/data sales**, generated **$3.5M+ in self-sourced pipeline** and averaged **118% of quota**. At Guesty, I built the French market from scratch and, across my responsibilities, closed **$1.5M+ in SaaS sales at 112% of quota**.
 
-**Focus:** Enterprise AI GTM · Solutions / Forward-Deployed Engineering development · CRM & Revenue Automation · Python · APIs · Agentic AI
+Today I apply that commercial experience to AI-assisted workflow development: defining the operating problem, directing implementation with AI coding tools and validating the result.
 
----
+**Tel Aviv, Israel · British and Israeli citizen · Native English · Fluent French**
 
-## Selected evidence
+## Selected projects
 
-| Area | Documented result | Evidence boundary |
-| --- | --- | --- |
-| Enterprise API & data sales — Webz.io | $2.5M+ closed revenue; 118% average quota attainment; $3.5M+ self-generated pipeline | Career-history figures; not independently audited in this repository |
-| Enterprise SaaS — Guesty | $1.5M+ closed revenue; 112% average quota attainment | Career-history figures; not independently audited in this repository |
-| CRM relationship verification | 41/41 tests independently reproduced offline on 2026-10-29 (23 top-level test declarations); read-only Cloudflare Worker | Sanitized public code and tests; not certified as a production deployment |
-| Revenue intake controls | 8 documented passing local tests; Python synthetic-data prototype | No live CRM or outbound automation claimed |
-| JOEL X career research | 48/48 offline tests on pinned private baseline | External calls and model responses mocked |
-| JARVIS / Hermes | Recovered session reports successful authorized Groq model inference | Generated tool call was not completed; no end-to-end autonomy claimed |
+### JOEL X — AI-assisted career research and application preparation
+**Problem:** Job research, candidate evidence and application history were spread across sources.
 
-## Public engineering work
+**My contribution:** Defined requirements, eligibility and review rules; directed AI-assisted implementation; operated the dashboard and reviewed generated materials against my actual experience.
+
+**Demonstrated result:** On November 1, 2026, a live dashboard question—“How many jobs am I tracking?”—returned **155 jobs**. The visible execution trace showed the model selecting `get_career_overview()`, a successful tool response and a completed final answer through Groq. A screenshot is retained in the Notion case study.
+
+**Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with human-reviewed application drafts.
 
 ### [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier)
-**Cloudflare Workers · JavaScript · REST APIs · Data integrity · Defensive engineering**
+**Problem:** An automated workflow can use the wrong property when CRM contacts and opportunities are incorrectly linked.
 
-A read-only verification layer for CRM Property–Contact–Opportunity associations. Designed to **fail closed** when identities, relationships, pagination, or upstream evidence cannot be trusted.
+**My contribution:** Defined the relationship checks and ambiguity handling; directed AI-assisted implementation and validation of a read-only verification control.
 
-- Explicit identity and relationship matching; human-review path for ambiguity.
-- Bounded API calls, pagination checks, and credential-safe decision logging.
-- **Evidence:** 41/41 tests independently reproduced offline on 2026-10-29 (23 top-level test declarations).
-- [Architecture and source](https://github.com/JoelGPascal/crm-association-verifier) · [Commercial context](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/COMMERCIAL_CONTEXT.md)
+**Demonstrated result:** The public sanitized version records **41 passing offline tests** reproduced on October 29, 2026. It returns a verified match only when the required relationships and identity agree.
 
-### [Revenue Intake — Safe Listing Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
-**Python · Data normalization · Provenance · Human approval gates**
+[Source and setup](https://github.com/JoelGPascal/crm-association-verifier) · [Architecture](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/architecture.md) · [Runnable example](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/synthetic-demo.md)
 
-A synthetic-data prototype that converts third-party property listing inputs into **review-required records**, without treating unverified listings, ARV estimates, or contact permissions as established facts.
+### [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
+**Problem:** Third-party property listings need consistent records and explicit review before they can support a commercial decision.
 
-- Stable source identity, explicit unverified fields, and conservative default decisions.
-- No scraping, live CRM writes, or outbound marketing in this public demo.
-- **Evidence:** 8 documented passing local tests.
-- [Source and methodology](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [Commercial context](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/COMMERCIAL_CONTEXT.md)
+**My contribution:** Defined intake requirements, source tracking and human-review rules from PDH operating needs; developed the prototype with AI coding assistance.
 
-## Private development — public technical summaries
+**Demonstrated result:** A Python demonstration normalizes synthetic listings, deduplicates source IDs and flags uncertain records for review. **Eight offline tests** were reproduced on October 29, 2026.
 
-### JARVIS — Agentic AI infrastructure
-**Hermes Agent · FreeLLMAPI · Groq · Model routing · Permission boundaries**
+[Source and setup](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [Architecture](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/architecture.md) · [Runnable example](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/synthetic-demo.md)
 
-Private infrastructure work exploring controlled agent orchestration and model access. The October 28, 2026 Codespaces handoff reports Hermes Agent v0.21.5, FreeLLMAPI v0.16.10, and a **successful authorized inference request** using Groq's `openai/gpt-oss-120b`. The model generated a tool call, but **tool execution was not completed**. This is a live inference checkpoint, **not** proof of a production autonomous agent.
+## Background
 
-### JOEL X — Career intelligence prototype
-**Python · Job-board ingestion · Deduplication · Eligibility rules · Ranking · Human review**
+- **Webz.io:** Full-cycle API/data sales to banking, cybersecurity and other enterprise customers; discovery, technical POCs, procurement and signature.
+- **Guesty:** French-market development, SaaS sales, SDR training and partnerships.
+- **Pascal Dominion Holdings:** Founder-led U.S. real-estate operations, CRM workflow design and practical AI experimentation.
 
-Private prototype for public job-board research across three career tracks: Enterprise Sales & GTM; AI Solutions & Agentic Engineering; and GTM Engineering & CRM Automation. **48/48 offline tests** passed on a pinned code baseline; network/model interactions were mocked. No automatic applications or live autonomous operation are claimed.
+## Further development
 
-## How I approach engineering
+**JARVIS / Hermes:** Private infrastructure experiments with model routing and agent orchestration. A recovered session records successful Groq inference and a proposed tool call; completed autonomous tool execution is not established.
 
-```mermaid
-flowchart LR
-    A["Business requirement"] --> B["Data provenance + validation"]
-    B --> C["Deterministic controls"]
-    C --> D{"Evidence sufficient?"}
-    D -->|Yes| E["Approved next step"]
-    D -->|No| F["Human review"]
-    E --> G["Logged outcome"]
-    F --> G
-```
+I am developing my technical capabilities toward AI solutions and GTM systems work, grounded in enterprise selling and operating experience.
 
-I prioritize **verifiable behavior over impressive-sounding claims**: smallest useful prototypes, clear boundaries, conservative defaults, and human authorization for consequential actions.
+## Evidence and status
 
-## Professional background
-
-- **Webz.io:** Enterprise API, data, and intelligence solutions; complex sales cycles and strategic accounts.
-- **Guesty:** Enterprise SaaS sales and international go-to-market development.
-- **Pascal Dominion Holdings:** Founder-led U.S. real-estate operations and revenue-workflow design.
-
-**Career direction:** Enterprise AI GTM, AI Solutions Engineering, Forward-Deployed Engineering development, and GTM/Revenue Systems Engineering.
+Commercial figures are career-history results supplied by me. Technical test results are dated offline checkpoints; they are separate from the live JOEL X interaction. The projects do not establish measured time savings, production reliability or autonomous application submission. Private customer records and credentials are excluded.
 
 ## Connect
 
-- [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/)
-- [GitHub projects](https://github.com/JoelGPascal)
-
-*This profile distinguishes public source evidence, offline tests, recovered session reports, and personal career-history claims. Private customer information, credentials, and internal repositories are intentionally excluded.*
+[LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/) · [Public projects](https://github.com/JoelGPascal?tab=repositories)
