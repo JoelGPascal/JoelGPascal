@@ -16,7 +16,11 @@ Today I apply that commercial experience to AI-assisted workflow development: de
 
 **My contribution:** Defined requirements, eligibility and review rules; directed AI-assisted implementation; operated the dashboard and reviewed generated materials against my actual experience.
 
-**Demonstrated result:** On November 1, 2026, a live dashboard question—“How many jobs am I tracking?”—returned **155 jobs**. The visible execution trace showed the model selecting `get_career_overview()`, a successful tool response and a completed final answer through Groq. A screenshot is retained in the Notion case study.
+**Demonstrated result:** On November 1, 2026, a live dashboard question—“How many jobs am I tracking?”—returned **155 jobs**. The visible execution trace showed the model selecting `get_career_overview()`, a successful tool response and a completed final answer through Groq. The captured interaction is shown below.
+
+![JOEL X live dashboard showing the job-count question, 155-job answer and successful tool execution trace](assets/joel-x-live-query-2026-11-01.png)
+
+*Captured November 1, 2026 in the development environment. The trace shows a completed read-only query over stored records. This demonstrates this interaction, rather than production reliability or measured time savings.*
 
 **Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with human-reviewed application drafts.
 
