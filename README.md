@@ -1,11 +1,11 @@
 # Joel Gabriel Pascal
-### Enterprise sales and market building | Practical AI and revenue systems
+### Enterprise Account Executive | Founding GTM | SaaS, Data & AI Solutions
 
 I help buyers evaluate complex technology and turn new markets into sales opportunities. My background spans enterprise SaaS, APIs and data, French-market development and founder-led commercial operations.
 
 At Webz.io (May 2023–February 2025), I closed **$2.5M+ in API/data sales**, generated **$3.5M+ in self-sourced pipeline** and averaged **118% of quota**. At Guesty (May 2017–July 2020), I developed the French market and, across my wider responsibilities, closed **$1.5M+ in SaaS sales at 112% of quota**.
 
-Today I apply that commercial experience to AI-assisted workflow development: defining the operating problem, directing implementation with AI coding tools and validating the result.
+I also run a US-registered business and have built AI-assisted workflows. That practical experience helps me work across commercial and technical teams; my core strength remains winning complex sales and developing markets.
 
 **Tel Aviv, Israel · British and Israeli citizen · Native English · Fluent French**
 
@@ -15,7 +15,7 @@ Today I apply that commercial experience to AI-assisted workflow development: de
 
 **Guesty market development:** Built pipeline through inbound/outbound prospecting, French-language discovery and demonstrations, and collaboration with marketing on content. Trained two SDRs and supported an Australian partnership that brought approximately 100 SMB customers. The $1.5M+ sales and 112% quota figures cover wider Guesty responsibilities; the Australian partnership is separate from French-market development.
 
-## Selected projects
+## Featured technical case study
 
 ### JOEL X — AI-assisted career research and application preparation
 **Problem:** Job research, candidate evidence and application history were spread across sources.
@@ -29,6 +29,8 @@ Today I apply that commercial experience to AI-assisted workflow development: de
 *Captured November 1, 2026 in the development environment. The trace shows a completed read-only query over stored records. This demonstrates this interaction, rather than production reliability or measured time savings.*
 
 **Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with manually reviewed application drafts. The published capture demonstrates a typed query. The maintained career record separately documents user-observed spoken playback in development. That is not independent verification of a microphone-to-answer cycle or production voice reliability. Application-enforced approval is not established by the public capture.
+
+## Additional public prototypes
 
 ### [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier)
 **Problem:** An automated workflow can use the wrong property when CRM contacts and opportunities are incorrectly linked.
@@ -62,7 +64,7 @@ I am developing my technical capabilities toward AI solutions and GTM systems wo
 
 ## Evidence and status
 
-Commercial figures are career-history results supplied by me. Employment dates provide context; the revenue basis and exact quota measurement periods have not been independently established. Technical test results are dated offline checkpoints; they are separate from the live JOEL X interaction. The projects do not establish measured time savings, production reliability or autonomous application submission. Private customer records and credentials are excluded.
+Commercial figures are career-history results; they are not independently audited. Technical test results are dated offline checkpoints; they are separate from the live JOEL X interaction. The projects do not establish measured time savings, production reliability or autonomous application submission. Private customer records and credentials are excluded.
 
 ## Connect
 
