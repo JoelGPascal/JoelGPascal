@@ -30,25 +30,11 @@ I also run a US-registered business and have built AI-assisted workflows. That p
 
 **Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with manually reviewed application drafts. The published capture demonstrates a typed query. The maintained career record separately documents user-observed spoken playback in development. That is not independent verification of a microphone-to-answer cycle or production voice reliability. Application-enforced approval is not established by the public capture.
 
-## Additional public prototypes
+## Additional public code
 
-### [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier)
-**Problem:** An automated workflow can use the wrong property when CRM contacts and opportunities are incorrectly linked.
+[CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier) · [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
 
-**My contribution:** Defined the relationship checks and ambiguity handling; directed AI-assisted implementation and validation of a read-only verification control.
-
-**Demonstrated result:** The public sanitized version records **41 passing offline tests** reproduced on October 29, 2026. It returns a verified match only when the required relationships and identity agree.
-
-[Source and setup](https://github.com/JoelGPascal/crm-association-verifier) · [Architecture](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/architecture.md) · [Runnable example](https://github.com/JoelGPascal/crm-association-verifier/blob/main/docs/synthetic-demo.md)
-
-### [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
-**Problem:** Third-party property listings need consistent records and explicit review before they can support a commercial decision.
-
-**My contribution:** Defined intake requirements, source tracking and human-review rules from PDH operating needs; developed the prototype with AI coding assistance.
-
-**Demonstrated result:** A Python demonstration normalizes synthetic listings, deduplicates source IDs and flags uncertain records for review. **Eight offline tests** were reproduced on October 29, 2026.
-
-[Source and setup](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [Architecture](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/architecture.md) · [Runnable example](https://github.com/JoelGPascal/pdh-revenue-intake-demo/blob/main/docs/synthetic-demo.md)
+These remain available as supporting prototypes; JOEL X is the sole featured technical case study.
 
 ## Background
 
