@@ -3,11 +3,17 @@
 
 I help buyers evaluate complex technology and turn new markets into sales opportunities. My background spans enterprise SaaS, APIs and data, French-market development and founder-led commercial operations.
 
-At Webz.io, I closed **$2.5M+ in API/data sales**, generated **$3.5M+ in self-sourced pipeline** and averaged **118% of quota**. At Guesty, I built the French market from scratch and, across my responsibilities, closed **$1.5M+ in SaaS sales at 112% of quota**.
+At Webz.io (May 2023–February 2025), I closed **$2.5M+ in API/data sales**, generated **$3.5M+ in self-sourced pipeline** and averaged **118% of quota**. At Guesty (May 2017–July 2020), I developed the French market and, across my wider responsibilities, closed **$1.5M+ in SaaS sales at 112% of quota**.
 
 Today I apply that commercial experience to AI-assisted workflow development: defining the operating problem, directing implementation with AI coding tools and validating the result.
 
 **Tel Aviv, Israel · British and Israeli citizen · Native English · Fluent French**
+
+## Commercial evidence
+
+**Cybersecurity data evaluation:** A customer needed better data for leaked-credential detection. I requalified the SDR handoff using MEDDIC, aligned 4–5 stakeholders and coordinated a three-week competitive POC with pre-sales. We agreed success criteria, timelines and mutual responsibilities; I progressed pricing and legal review through signature. This is an anonymized career account, without a claimed deal value or detection uplift.
+
+**Guesty market development:** Built pipeline through inbound/outbound prospecting, French-language discovery and demonstrations, and collaboration with marketing on content. Trained two SDRs and supported an Australian partnership that brought approximately 100 SMB customers. The $1.5M+ sales and 112% quota figures cover wider Guesty responsibilities; the Australian partnership is separate from French-market development.
 
 ## Selected projects
 
@@ -22,7 +28,7 @@ Today I apply that commercial experience to AI-assisted workflow development: de
 
 *Captured November 1, 2026 in the development environment. The trace shows a completed read-only query over stored records. This demonstrates this interaction, rather than production reliability or measured time savings.*
 
-**Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with human-reviewed application drafts.
+**Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with manually reviewed application drafts. The published capture demonstrates a typed query. Voice controls are visible, but a completed voice interaction and application-enforced approval are not established by this evidence.
 
 ### [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier)
 **Problem:** An automated workflow can use the wrong property when CRM contacts and opportunities are incorrectly linked.
@@ -56,8 +62,8 @@ I am developing my technical capabilities toward AI solutions and GTM systems wo
 
 ## Evidence and status
 
-Commercial figures are career-history results supplied by me. Technical test results are dated offline checkpoints; they are separate from the live JOEL X interaction. The projects do not establish measured time savings, production reliability or autonomous application submission. Private customer records and credentials are excluded.
+Commercial figures are career-history results supplied by me. Employment dates provide context; the revenue basis and exact quota measurement periods have not been independently established. Technical test results are dated offline checkpoints; they are separate from the live JOEL X interaction. The projects do not establish measured time savings, production reliability or autonomous application submission. Private customer records and credentials are excluded.
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/) · [Public projects](https://github.com/JoelGPascal?tab=repositories)
+[Portfolio](https://false-ash-26c.notion.site/Joel-Pascal-portfolio-Enterprise-Sales-GTM-and-Practical-AI-40b5622002f981709ab3e773187085f3) · [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/) · [Public projects](https://github.com/JoelGPascal?tab=repositories)
