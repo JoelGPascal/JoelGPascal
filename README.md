@@ -28,7 +28,7 @@ Today I apply that commercial experience to AI-assisted workflow development: de
 
 *Captured November 1, 2026 in the development environment. The trace shows a completed read-only query over stored records. This demonstrates this interaction, rather than production reliability or measured time savings.*
 
-**Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with manually reviewed application drafts. The published capture demonstrates a typed query. Voice controls are visible, but a completed voice interaction and application-enforced approval are not established by this evidence.
+**Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with manually reviewed application drafts. The published capture demonstrates a typed query. The maintained career record separately documents user-observed spoken playback in development. That is not independent verification of a microphone-to-answer cycle or production voice reliability. Application-enforced approval is not established by the public capture.
 
 ### [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier)
 **Problem:** An automated workflow can use the wrong property when CRM contacts and opportunities are incorrectly linked.
