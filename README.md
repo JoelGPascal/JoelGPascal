@@ -1,57 +1,57 @@
 # Joel Gabriel Pascal
 ### Enterprise Account Executive | Founding GTM | SaaS, Data & AI Solutions
 
-I help buyers evaluate complex technology and turn new markets into sales opportunities. My background spans enterprise SaaS, APIs and data, French-market development and founder-led commercial operations.
+I help buyers evaluate complex technology and turn new markets into revenue.
+I'm a UK national now based in Tel Aviv · Native English · Fluent French
 
-At Webz.io (May 2023–February 2025), I closed **$2.5M+ in API/data sales**, generated **$3.5M+ in self-sourced pipeline** and averaged **118% of quota**. At Guesty (May 2017–July 2020), I developed the French market and, across my wider responsibilities, closed **$1.5M+ in SaaS sales at 112% of quota**.
+- **Webz.io (2023–2025):** $2.5M+ in API/data sales, $3.5M+ self-sourced pipeline, 118% average quota
+- **Guesty (2017–2020):** $1.5M+ in SaaS sales at 112% of quota; developed the French market and an Australian partnership channel that brought in 100+ customers
+- **Pascal Dominion Holdings (2025–present):** Founder of a US real estate business, where I build the AI systems I use to run it
 
-I also run a US-registered business and have built AI-assisted workflows. That practical experience helps me work across commercial and technical teams; my core strength remains winning complex sales and developing markets.
+---
 
-**Tel Aviv, Israel · British and Israeli citizen · Native English · Fluent French**
+## What I've built
 
-## Commercial evidence
+Two separate AI systems for two real jobs, plus one dashboard designed to control both.
 
-**Cybersecurity data evaluation:** A customer needed better data for leaked-credential detection. I requalified the SDR handoff using MEDDIC, aligned 4–5 stakeholders and coordinated a three-week competitive POC with pre-sales. We agreed success criteria, timelines and mutual responsibilities; I progressed pricing and legal review through signature. This is an anonymized career account, without a claimed deal value or detection uplift.
+```
+             ┌──────────────────────────┐
+             │     JARVIS dashboard     │  one place to see and run everything
+             └────────────┬─────────────┘
+          ┌───────────────┴───────────────┐
+ ┌────────▼──────────┐          ┌─────────▼─────────┐
+ │  PDH Real Estate  │          │  JOEL X Career    │
+ │  AI system        │          │  Agent            │
+ └───────────────────┘          └───────────────────┘
+```
 
-**Guesty international market development:** Started selling into the US market, then after approximately eight months transitioned to French-speaking markets including France, Belgium, Luxembourg and Canada. Built pipeline through prospecting, discovery and demonstrations, and collaborated with marketing; trained two SDRs. Ahead of Guesty's Australian office expansion, developed a partnership with BnBProfessional after an initial pricing objection: researched the business and Australian hosts, re-engaged the prospect and established the relationship. Led Zoom demonstrations for hundreds of attendees, handled live Q&A and one-to-one follow-ups, helping bring in more than 100 SMB customers. Also engaged audiences at Australian conferences. The $1.5M+ sales and 112% quota figures cover wider Guesty responsibilities; the Australian partnership is separate from French-market development.
+| Project | What it does | Code |
+|---|---|---|
+| **JARVIS** | Voice-enabled command dashboard: one screen for both systems. JOEL X is connected; PDH integration is next | Private prototype |
+| **PDH Real Estate AI** | Turns messy property listings into reviewed leads and checks CRM records are linked correctly before automation acts | [Intake demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [CRM verifier](https://github.com/JoelGPascal/crm-association-verifier) |
+| **JOEL X Career Agent** | Finds jobs, scores fit and drafts applications. I built and tested it on my own job search first | Private prototype |
 
-## Featured technical case study
+**Design rule across all three:** automate the predictable path, and send anything uncertain to a human. Nothing is sent, published or changed in a CRM without approval.
 
-### JOEL X — AI-assisted career research and application preparation
-**Problem:** Job research, candidate evidence and application history were spread across sources.
+<!-- UPDATE AFTER CHATGPT'S JOEL X WORK: refresh the screenshot, job count and stack below -->
+### JOEL X in action
 
-**My contribution:** Defined requirements, eligibility and review rules; directed AI-assisted implementation; operated the dashboard and reviewed generated materials against my actual experience.
+Asked "How many jobs am I tracking?", the agent picked the right tool, read my records and answered: **155 jobs**.
 
-**Demonstrated result:** On November 1, 2026, a live dashboard question—“How many jobs am I tracking?”—returned **155 jobs**. The visible execution trace showed the model selecting `get_career_overview()`, a successful tool response and a completed final answer through Groq. The captured interaction is shown below.
+![JOEL X dashboard answering a question with a visible tool-call trace](assets/joel-x-live-query-2026-11-01.png)
 
-![JOEL X live dashboard showing the job-count question, 155-job answer and successful tool execution trace](assets/joel-x-live-query-2026-11-01.png)
+*Python · Next.js · SQLite · Groq-hosted LLMs*
 
-*Captured November 1, 2026 in the development environment. The trace shows a completed read-only query over stored records. This demonstrates this interaction, rather than production reliability or measured time savings.*
+---
 
-**Stack:** Python, Next.js, SQLite, Groq-hosted LLMs. The source and database remain private. This is a development prototype with manually reviewed application drafts. The published capture demonstrates a typed query. The maintained career record separately documents user-observed spoken playback in development. That is not independent verification of a microphone-to-answer cycle or production voice reliability. Application-enforced approval is not established by the public capture.
+## Commercial highlights
 
-## Additional public code
+**Cybersecurity data deal (Webz.io):** Requalified an SDR handoff using MEDDIC, aligned 4–5 stakeholders, ran a three-week competitive POC with pre-sales, and took pricing and legal review through to signature.
 
-[CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier) · [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
+**Australia partnership (Guesty):** Turned a partner's pricing objection into a partnership with BnBProfessional, then ran Zoom demos for hundreds of hosts. The partnership brought in 100+ SMB customers.
 
-These remain available as supporting prototypes; JOEL X is the sole featured technical case study.
+---
 
-## Background
+<sub>Commercial figures are from my career history and haven't been independently audited. Projects are development prototypes; private code, customer data and credentials are excluded.</sub>
 
-- **Webz.io:** Full-cycle API/data sales to banking, cybersecurity and other enterprise customers; discovery, technical POCs, procurement and signature.
-- **Guesty:** French-market development, SaaS sales, SDR training and partnerships.
-- **Pascal Dominion Holdings:** Founder-led U.S. real-estate operations, CRM workflow design and practical AI experimentation.
-
-## Further development
-
-**JARVIS / Hermes:** Private infrastructure experiments with model routing and agent orchestration. A recovered session records successful Groq inference and a proposed tool call; completed autonomous tool execution is not established.
-
-I am developing my technical capabilities toward AI solutions and GTM systems work, grounded in enterprise selling and operating experience.
-
-## Evidence and status
-
-Commercial figures are career-history results; they are not independently audited. Technical test results are dated offline checkpoints; they are separate from the live JOEL X interaction. The projects do not establish measured time savings, production reliability or autonomous application submission. Private customer records and credentials are excluded.
-
-## Connect
-
-[Portfolio](https://false-ash-26c.notion.site/Joel-Pascal-portfolio-Enterprise-Sales-GTM-and-Practical-AI-40b5622002f981709ab3e773187085f3) · [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/) · [Public projects](https://github.com/JoelGPascal?tab=repositories)
+[Portfolio](https://false-ash-26c.notion.site/Joel-Pascal-portfolio-Enterprise-Sales-GTM-and-Practical-AI-40b5622002f981709ab3e773187085f3) · [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/)
