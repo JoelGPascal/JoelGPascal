@@ -52,6 +52,6 @@ Asked "How many jobs am I tracking?", the agent picked the right tool, read my r
 
 ---
 
-<sub>Commercial figures are from my career history and haven't been independently audited. Projects are development prototypes; private code, customer data and credentials are excluded.</sub>
+<sub>Private code, customer data and credentials are kept out of public repos.</sub>
 
 [Portfolio](https://false-ash-26c.notion.site/Joel-Pascal-portfolio-Enterprise-Sales-GTM-and-Practical-AI-40b5622002f981709ab3e773187085f3) · [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/)
