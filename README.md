@@ -2,6 +2,8 @@
 
 I build and integrate AI-assisted systems for two practical needs: managing a job search and operating a real estate business. The work has three connected parts: JARVIS, a personal AI assistant and command centre; JOEL X, an AI career agent; and PDH business automation built around GoHighLevel (GHL). AI Workforce provides the agent coordination, task execution and human-review layer.
 
+[Project engineering overview](PROJECTS.md) explains the components, technical work, evidence boundaries and public source examples.
+
 ## Projects
 
 | Project | Engineering work | Scope |
