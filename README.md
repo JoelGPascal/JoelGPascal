@@ -1,12 +1,12 @@
 # Joel Gabriel Pascal
 
-I am building supervised AI workflows for career operations, task coordination and business-data review. The projects grew from a practical need: keep source evidence, generated work and human decisions together when several tools are involved.
+I am building JARVIS, an AI career agent that helps find jobs, assess fit, track application history and prepare evidence-backed CV and application drafts for human review. JOEL X provides the career engine; AI Workforce coordinates agents, tasks and approvals through the JARVIS dashboard.
 
 ## Projects
 
 | Project | Engineering work | Scope |
 | --- | --- | --- |
-| JARVIS AI Workforce | Python task/API service, agent registry, restricted model execution, review queues, integration adapters and local dashboard work | Private engineering pilot; newer integrated code remains in draft PRs |
+| JARVIS — AI Career Agent / AI Workforce | Agent coordination, Python task/API service, supervised execution, review queues and dashboard supporting the JOEL X career engine | Private engineering pilot; newer integrated code remains in draft PRs |
 | JOEL X | Python job-board discovery, eligibility/history checks, SQLite records, evidence-backed drafts and a later Next.js/model-tool interface | Private development system; drafts require review; automated submission is not implemented in the inspected workflow |
 | [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier) | JavaScript Cloudflare Worker checking contact/opportunity/property relationships with fail-closed results | Public prototype and tests; live end-to-end deployment is not established |
 | [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo) | Pure Python normalization, source tracking, deduplication and review flags | Public synthetic-data demo; no CRM writes or outreach |
