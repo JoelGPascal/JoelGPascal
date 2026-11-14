@@ -1,57 +1,30 @@
 # Joel Gabriel Pascal
-### Enterprise Account Executive | Founding GTM | SaaS, Data & AI Solutions
 
-I help buyers evaluate complex technology and turn new markets into revenue.
-I'm a UK national now based in Tel Aviv · Native English · Fluent French
+I am building supervised AI workflows for career operations, task coordination and business-data review. The projects grew from a practical need: keep source evidence, generated work and human decisions together when several tools are involved.
 
-- **Webz.io (2023–2025):** $2.5M+ in API/data sales, $3.5M+ self-sourced pipeline, 118% average quota
-- **Guesty (2017–2020):** $1.5M+ in SaaS sales at 112% of quota; developed the French market and an Australian partnership channel that brought in 100+ customers
-- **Pascal Dominion Holdings (2025–present):** Founder of a US real estate business, where I build the AI systems I use to run it
+## Projects
 
----
+| Project | Engineering work | Scope |
+| --- | --- | --- |
+| JARVIS AI Workforce | Python task/API service, agent registry, restricted model execution, review queues, integration adapters and local dashboard work | Private engineering pilot; newer integrated code remains in draft PRs |
+| JOEL X | Python job-board discovery, eligibility/history checks, SQLite records, evidence-backed drafts and a later Next.js/model-tool interface | Private development system; drafts require review; automated submission is not implemented in the inspected workflow |
+| [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier) | JavaScript Cloudflare Worker checking contact/opportunity/property relationships with fail-closed results | Public prototype and tests; live end-to-end deployment is not established |
+| [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo) | Pure Python normalization, source tracking, deduplication and review flags | Public synthetic-data demo; no CRM writes or outreach |
 
-## What I've built
+The private projects are not available as complete public deployments. Their local installations also depend on private state and configuration that are excluded from Git.
 
-Two separate AI systems for two real jobs, plus one dashboard designed to control both.
+## Design and implementation approach
 
-```
-             ┌──────────────────────────┐
-             │     JARVIS dashboard     │  one place to see and run everything
-             └────────────┬─────────────┘
-          ┌───────────────┴───────────────┐
- ┌────────▼──────────┐          ┌─────────▼─────────┐
- │  PDH Real Estate  │          │  JOEL X Career    │
- │  AI system        │          │  Agent            │
- └───────────────────┘          └───────────────────┘
-```
+Work is prepared for human review. Uncertain source data stays uncertain; a draft or pipeline label is not treated as proof of a completed external action.
 
-| Project | What it does | Code |
-|---|---|---|
-| **JARVIS** | Voice-enabled command dashboard: one screen for both systems. JOEL X is connected; PDH integration is next | Private prototype |
-| **PDH Real Estate AI** | Turns messy property listings into reviewed leads and checks CRM records are linked correctly before automation acts | [Intake demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo) · [CRM verifier](https://github.com/JoelGPascal/crm-association-verifier) |
-| **JOEL X Career Agent** | Finds jobs, scores fit and drafts applications. I built and tested it on my own job search first | Private prototype |
+The projects use Python, JavaScript/TypeScript, local HTTP services, SQLite, browser interfaces and selected third-party APIs. Implemented capabilities differ by repository and branch; a model integration or agent definition alone does not establish autonomous operation.
 
-**Design rule across all three:** automate the predictable path, and send anything uncertain to a human. Nothing is sent, published or changed in a CRM without approval.
+I define workflow requirements and evidence/acceptance rules, direct and review AI-assisted implementation, integrate components and test results against the intended workflow. Repository history includes AI co-authorship.
 
-<!-- UPDATE AFTER CHATGPT'S JOEL X WORK: refresh the screenshot, job count and stack below -->
-### JOEL X in action
+Agent definitions and plugins reuse third-party collections. The private HUD has a separate upstream origin. Hermes and other model tools are components or historical foundations, not software I claim to have authored.
 
-Asked "How many jobs am I tracking?", the agent picked the right tool, read my records and answered: **155 jobs**.
+## Development record
 
-![JOEL X dashboard answering a question with a visible tool-call trace](assets/joel-x-live-query-2026-11-01.png)
+As of 14 November 2026, JARVIS/JOEL X documentation is being reconciled with source, tests and draft branches. The priorities are reproducibility, explicit integration boundaries, source-to-runtime mapping and dependable human control. No production reliability or business-effectiveness claim is implied.
 
-*Python · Next.js · SQLite · Groq-hosted LLMs*
-
----
-
-## Commercial highlights
-
-**Cybersecurity data deal (Webz.io):** Requalified an SDR handoff using MEDDIC, aligned 4–5 stakeholders, ran a three-week competitive POC with pre-sales, and took pricing and legal review through to signature.
-
-**Australia partnership (Guesty):** Turned a partner's pricing objection into a partnership with BnBProfessional, then ran Zoom demos for hundreds of hosts. The partnership brought in 100+ SMB customers.
-
----
-
-<sub>Projects are development prototypes; private code, customer data and credentials are excluded.</sub>
-
-[Portfolio](https://false-ash-26c.notion.site/Joel-Pascal-portfolio-Enterprise-Sales-GTM-and-Practical-AI-40b5622002f981709ab3e773187085f3) · [LinkedIn](https://www.linkedin.com/in/joelgabrielpascal/)
+The public repositories contain synthetic examples and their own setup/test instructions.
