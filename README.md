@@ -43,7 +43,7 @@ Engineering detail for each system: [PROJECTS.md](PROJECTS.md)
 
 | Track | Courses | Status |
 | --- | --- | --- |
-| Google | Google AI certificate | `In progress` |
+| Google | Google AI Essentials | `In progress` |
 | Anthropic certification | Claude Certified Associate – Foundations, then Developer – Foundations | `Next` |
 | Python | Python for AI engineering | `In progress` |
 | Anthropic Academy | Claude API, Model Context Protocol, agent skills, subagents, evals, Claude Code | `In progress` |
