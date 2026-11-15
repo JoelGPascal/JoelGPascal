@@ -31,8 +31,8 @@ Each system started as a bottleneck in my own work. For every project: the probl
 **How it's built.**
 - Python services with a React/TypeScript HUD
 - Gmail and Google Calendar through Google OAuth
-- Local models through Ollama, with free-tier cloud models for small tasks
-- Agent runtime on Hermes Agent with a localhost model router
+- Local models through Ollama; free-tier cloud fallback for small tasks in development
+- Earlier cloud prototype on Hermes Agent with a localhost model router (October 2026)
 
 **Next.** Lower memory use on the laptop and one connected view of JOEL X and PDH.
 
