@@ -43,11 +43,11 @@ Engineering detail for each system: [PROJECTS.md](PROJECTS.md)
 
 | Track | Courses | Status |
 | --- | --- | --- |
-| Google | Google AI Essentials | `In progress` |
+| Anthropic Academy | Claude Code 101 | `In progress` |
+| Python | AI Python for Beginners (DeepLearning.AI) | `Next` |
+| Anthropic Academy | Claude API, Model Context Protocol, agent skills, subagents, evals | `Next` |
 | Anthropic certification | Claude Certified Associate – Foundations, then Developer – Foundations | `Next` |
-| Python | Python for AI engineering | `In progress` |
-| Anthropic Academy | Claude API, Model Context Protocol, agent skills, subagents, evals, Claude Code | `In progress` |
-| Hugging Face | LLM Course, AI Agents Course, MCP Course | `Next` |
+| Hugging Face | AI Agents Course, MCP Course | `Next` |
 
 Each course ends in a working build that lands in this GitHub.
 
