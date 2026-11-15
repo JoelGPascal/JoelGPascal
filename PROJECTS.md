@@ -1,42 +1,93 @@
-# Project engineering overview
+# Projects
 
-I build and integrate systems for personal assistance, career operations and business workflows. The applications are related but have separate responsibilities and records.
+Each system started as a bottleneck in my own work. For every project: the problem, what I built, how it's built, and where it stands.
 
-## JARVIS: personal assistant and command centre
+---
 
-JARVIS brings task activity, career summaries, email/calendar context and business-data review into a local interface. Its engineering work includes Python HTTP APIs, browser dashboards, Google Desktop OAuth integration, human-review boundaries and Windows launch/recovery tooling. A newer React/TypeScript HUD exists in development alongside the baseline interface.
+## JOEL X — AI career agent · `In development`
 
-The local installation and private source are not a complete public deployment. Interface appearance, implementation and live verification are separate.
+**Problem.** A serious job search means scanning dozens of boards, checking eligibility, avoiding duplicate applications and tailoring a CV per role, all without stretching the truth.
 
-## AI Workforce: orchestration infrastructure
+**What I built.** An agent that pulls live roles from official job boards, rejects or flags roles I'm not eligible for, remembers every past application, and prepares a CV and cover letter where every claim links back to a verified source. I approve every decision; nothing is submitted automatically.
 
-AI Workforce supplies the agent registry, task persistence, model execution, review queues and recovery mechanisms. It combines third-party role definitions/plugins with repository-specific orchestration code. Claude and Ollama paths are supervised; optional provider fallback is separate configuration.
+**How it's built.**
+- Python discovery adapters for Greenhouse and Ashby job boards
+- Rule-based eligibility (`ELIGIBLE` / `VERIFY` / `REJECT`) with application-history checks
+- SQLite records for jobs, decisions, CV versions, evidence links and approvals
+- Bounded model tool loop with schemas, time limits and an audit trail
+- Next.js interface with browser voice
+- 82 offline tests
 
-The challenge is controlling what an agent can see or execute while preserving task/result provenance and human decisions. Registered roles do not establish that every role has been independently exercised or that the system is autonomous.
+**Next.** Job-posting liveness checks, claim-level CV verification, and a supervised recruiter-email-to-interview workflow. Benchmarked against [Career Ops](https://github.com/career-ops-hq/career-ops).
 
-## JOEL X: AI career agent
+---
 
-JOEL X discovers jobs from official board sources, checks eligibility and application history, preserves career records in SQLite and prepares evidence-linked CV/application drafts. Later development adds a Next.js interface, bounded model-to-tool interaction, browser voice and canonical candidate-profile handling.
+## JARVIS — command centre · `Pilot`
 
-Important engineering boundaries include stable source identity, history freshness, duplicate/reapplication checks, versioned artifacts and review state. Preparing a document is distinct from confirming its quality or submitting it. Automatic submission is not implemented in the inspected workflow.
+**Problem.** Career, business and inbox work were spread across a dozen tools with no single view of what needed attention.
 
-## PDH / GHL: business workflow automation
+**What I built.** One command centre that shows tasks, agent activity, the career pipeline, and email and calendar context, with voice control and an approval queue for anything that acts on my behalf.
 
-GoHighLevel is the third-party operational platform. The engineering work around it concerns CRM data/workflow design, exact record relationships, review-only source intake, deterministic validation, reporting and matching. JARVIS reporting is separate from GHL's native workflow configuration and customer state.
+**How it's built.**
+- Python services with a React/TypeScript HUD
+- Gmail and Google Calendar through Google OAuth
+- Local models through Ollama, with free-tier cloud models for small tasks
+- Agent runtime on Hermes Agent with a localhost model router
 
-Public source examples:
+**Next.** Lower memory use on the laptop and one connected view of JOEL X and PDH.
 
-| Example | What can be inspected |
-| --- | --- |
-| [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier) | JavaScript Worker, authenticated request contract, bounded read-only API access, exact association checks and failure handling |
-| [Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo) | Pure Python normalization, source tracking, deduplication, unverified-data labels and synthetic tests |
+---
 
-Neither public prototype certifies the complete live business workflow or any business outcome.
+## AI Workforce — agent coordination · `In development`
 
-## Contributions, technologies and evidence
+**Problem.** Running several specialist agents safely needs task tracking, limits on what each agent can do, and a human review step.
 
-I define requirements, data/evidence rules and acceptance criteria; direct and review AI-assisted implementation; integrate components; and check behavior against the workflow. Commit history records AI assistance. I do not claim authorship of GHL, model providers, upstream agent collections or the imported HUD.
+**What I built.** The coordination layer behind JARVIS: an agent registry, task persistence, restricted model execution, review queues and recovery after a crash or restart.
 
-The work spans Python, JavaScript/TypeScript, REST APIs, OAuth, SQLite, JSON/JSONL state, browser interfaces, model routing, deterministic validation and local recovery. Private repositories document exact source paths, branch differences, test scope and unresolved technical work. Public examples include their own setup, source and dated verification records.
+**How it's built.**
+- Python HTTP service with JSON/JSONL task and audit records
+- Claude CLI and Ollama execution with model routing
+- Specialist roles adapted from open-source agent collections (credited in the repo)
 
-Documentation date: 14 November 2026. Working source, tested behavior, live deployment and future plans are kept distinct; no production-readiness or measured business-benefit claim is implied.
+**Next.** Merge the consolidation, Windows, model-routing and command-board work into one release.
+
+---
+
+## PDH revenue engine · `In development`
+
+**Problem.** Pascal Dominion Holdings buys and sells US residential property. Revenue depends on matching motivated sellers with active buyers quickly, across thousands of CRM records.
+
+**What I built.** The operating system for the business on GoHighLevel: acquisitions and dispositions pipelines, buyer and seller databases, buy-box intelligence, and live seller and investor websites. Custom code handles what the CRM can't verify on its own.
+
+**How it's built.**
+- GoHighLevel CRM with custom Property and Buy Box objects
+- Phased architecture: CRM foundation and workflow spine complete; property intelligence in progress; supervised AI outreach planned
+- Python and JavaScript tools for intake, matching and record verification (two are public, below)
+
+**Next.** Certified form-to-CRM routing and supervised buyer outreach.
+
+---
+
+## CRM Association Verifier · `Public prototype` · [repo](https://github.com/JoelGPascal/crm-association-verifier)
+
+**Problem.** A deal acted on with the wrong contact or property attached costs money and trust.
+
+**What I built.** A read-only service that checks contacts, opportunities and properties are correctly linked before anyone acts, and refuses to answer when the data is incomplete or ambiguous.
+
+**How it's built.** JavaScript on Cloudflare Workers, authenticated requests, bounded read-only API access. 41 tests.
+
+---
+
+## Revenue Intake Demo · `Public prototype` · [repo](https://github.com/JoelGPascal/pdh-revenue-intake-demo)
+
+**Problem.** Property leads arrive from many sources in inconsistent formats, with duplicates.
+
+**What I built.** A pipeline that normalises raw listing inputs, tracks where each record came from, collapses duplicates and flags uncertain fields for review.
+
+**How it's built.** Pure Python with no dependencies, synthetic data only. 8 tests.
+
+---
+
+## How I build
+
+I define the workflow, the evidence rules and the acceptance criteria. I build with Claude Code as my development partner, review every change, and test against the real process. Third-party platforms (GoHighLevel, Hermes Agent, model providers, open-source agent collections) are credited in each repository.
