@@ -1,40 +1,55 @@
 # Joel Gabriel Pascal
 
-I build and integrate AI-assisted systems for two practical needs: managing a job search and operating a real estate business. The work has three connected parts: JARVIS, a personal AI assistant and command centre; JOEL X, an AI career agent; and PDH business automation built around GoHighLevel (GHL). AI Workforce provides the agent coordination, task execution and human-review layer.
+**Enterprise seller who builds the AI systems behind the sale.**
 
-[Project engineering overview](PROJECTS.md) explains the components, technical work, evidence boundaries and public source examples.
+I've closed technology deals since 2017: enterprise APIs, data and SaaS, across EMEA and global accounts. Now I build the AI agents and revenue systems that make selling, hiring and deal flow run faster, with Claude, Python and MCP. I'm a UK national based in Tel Aviv.
 
-## Projects
+`Enterprise GTM & Strategic Sales` · `AI agents` · `SaaS` · `APIs` · `Data` · `Revenue systems`
 
-| Project | Engineering work | Scope |
+---
+
+## Track record
+
+| | |
+| --- | --- |
+| **$4M+** | technology revenue closed across prior roles |
+| **$2.5M+** | enterprise API and data revenue at Webz.io, ~118% average quota attainment, $3.5M+ self-sourced pipeline |
+| **$1.5M+** | SaaS revenue at Guesty, ~112% quota attainment; opened the French market and helped build an Australian partner channel with 100+ customers |
+| **2025–now** | Founder & Managing Member, Pascal Dominion Holdings: US real estate acquisitions and dispositions, North Carolina and Texas |
+
+## What I build
+
+Every system started as a bottleneck in my own work: a job search, a sales pipeline, a real estate business. I design the workflow and the rules for evidence and approval, build with Claude Code, and test against the real process.
+
+| Project | What it does | How it's built | Status |
+| --- | --- | --- | --- |
+| **JOEL X — AI career agent** | Finds live roles on official job boards, checks eligibility and application history, and prepares evidence-linked CVs for my approval | Python, SQLite, Greenhouse and Ashby adapters, bounded model tool loop, approval queue, Next.js interface · 82 offline tests | `In development` |
+| **JARVIS — command centre** | One dashboard for tasks, agent activity, career pipeline, email and calendar, with voice control | Python services, React/TypeScript HUD, Ollama local models, Gmail and Calendar integration | `Pilot` |
+| **AI Workforce** | Coordinates specialist agents with task tracking, review queues and recovery | Python, Claude and Ollama execution, model routing, JSON/JSONL audit records | `In development` |
+| **PDH revenue engine** | Runs buyer and seller pipelines for my real estate business on GoHighLevel | CRM workflow design, buyer/seller matching, source validation, reporting | `In development` |
+| [**CRM Association Verifier**](https://github.com/JoelGPascal/crm-association-verifier) | Checks that contacts, deals and properties are correctly linked before anyone acts on them | JavaScript, Cloudflare Workers, read-only API access, fails closed · 41 tests | `Public prototype` |
+| [**Revenue Intake Demo**](https://github.com/JoelGPascal/pdh-revenue-intake-demo) | Turns raw property-listing inputs into clean, deduplicated records flagged for review | Pure Python, source tracking, synthetic data · 8 tests | `Public prototype` |
+
+Engineering detail for each system: [PROJECTS.md](PROJECTS.md)
+
+## How I work
+
+1. **Start from the revenue problem.** Map the real workflow before writing any code.
+2. **Keep humans on the decisions.** Agents research, draft and prepare; nothing is sent, submitted or changed without approval.
+3. **Make claims traceable.** Every figure in a generated CV or report links back to a verified source.
+4. **Prove it with tests,** then measure the time and revenue impact.
+
+## Learning in public
+
+| Track | Courses | Status |
 | --- | --- | --- |
-| JARVIS — Personal AI Assistant | Central dashboard for tasks, agent activity, career summaries, Gmail/Calendar access and human approvals; Python backend with a React/TypeScript HUD in development | Private local engineering pilot; integrated capabilities and deployment evidence are documented by branch |
-| AI Workforce | Agent registry, restricted Claude/Ollama execution, model routing, task persistence, review queues and recovery mechanisms supporting JARVIS | Python service with JSON/JSONL state; newer integrated work remains in draft PRs |
-| JOEL X — AI Career Agent | Python job-board discovery, eligibility/history checks, SQLite records, evidence-backed drafts and a later Next.js/model-tool interface | Private development system; drafts require review; automated submission is not implemented in the inspected workflow |
-| PDH / GoHighLevel Business Automation | CRM data/workflow design for buyers, sellers and deals; source validation, property relationships, sanitized reporting and buyer/seller matching work | GHL is the third-party operational platform; custom code and prototypes are separate, with live integration status documented individually |
-| [CRM Association Verifier](https://github.com/JoelGPascal/crm-association-verifier) | JavaScript Cloudflare Worker checking contact/opportunity/property relationships with fail-closed results | Public prototype and tests; live end-to-end deployment is not established |
-| [PDH Revenue Intake Demo](https://github.com/JoelGPascal/pdh-revenue-intake-demo) | Pure Python normalization, source tracking, deduplication and review flags | Public synthetic-data demo; no CRM writes or outreach |
+| Google | Google certificate | `Completed` |
+| Python | Python for AI engineering | `In progress` |
+| Anthropic Academy | Claude API, Model Context Protocol, agent skills, subagents, evals, Claude Code | `In progress` |
+| Hugging Face | LLM Course, AI Agents Course, MCP Course | `Next` |
 
-The private projects are not available as complete public deployments. Their local installations also depend on private state and configuration that are excluded from Git.
+Each course ends in a working build that lands in this GitHub.
 
-## How the systems fit together
+## Open to
 
-JARVIS is the interface and assistant. AI Workforce manages agent tasks and review. JOEL X owns career records and draft preparation. GHL owns PDH business records and its native workflows. Custom adapters and reports connect selected information; this does not mean every planned integration is live.
-
-**Technical work:** Python HTTP services, REST API integrations, Google Desktop OAuth, SQLite career state, JSON/JSONL task and audit records, JavaScript/TypeScript interfaces, deterministic validation, restricted model execution, isolated tests, and Windows startup/recovery tooling. The linked repositories distinguish merged code, development branches, prototypes and recorded runtime checks.
-
-## Design and implementation approach
-
-Work is prepared for human review. Uncertain source data stays uncertain; a draft or pipeline label is not treated as proof of a completed external action.
-
-The projects use Python, JavaScript/TypeScript, local HTTP services, SQLite, browser interfaces and selected third-party APIs. Implemented capabilities differ by repository and branch; a model integration or agent definition alone does not establish autonomous operation.
-
-I define workflow requirements and evidence/acceptance rules, direct and review AI-assisted implementation, integrate components and test results against the intended workflow. Repository history includes AI co-authorship.
-
-Agent definitions and plugins reuse third-party collections. The private HUD has a separate upstream origin. Hermes and other model tools are components or historical foundations, not software I claim to have authored.
-
-## Development record
-
-As of 14 November 2026, JARVIS/JOEL X documentation is being reconciled with source, tests and draft branches. The priorities are reproducibility, explicit integration boundaries, source-to-runtime mapping and dependable human control. No production reliability or business-effectiveness claim is implied.
-
-The public repositories contain synthetic examples and their own setup/test instructions.
+GTM Engineer · AI Solutions / Sales Engineer · Founding and enterprise AE at AI companies · Forward Deployed roles
