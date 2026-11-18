@@ -4,52 +4,25 @@ Each system started as a bottleneck in my own work. For every project: the probl
 
 ---
 
-## JOEL X — AI career agent · `In development`
+## Featured system: JARVIS, JOEL X and AI Workforce · `Working local pilot`
 
-**Problem.** A serious job search means scanning dozens of boards, checking eligibility, avoiding duplicate applications and tailoring a CV per role, all without stretching the truth.
+**Problem.** Research records, document drafts and delegated work needed a single reviewable workflow.
 
-**What I built.** An agent that pulls live roles from official job boards, rejects or flags roles I'm not eligible for, remembers every past application, and prepares a CV and cover letter where every claim links back to a verified source. I approve every decision; nothing is submitted automatically.
+**My contribution.** I define the requirements, evidence rules and approval boundaries; direct AI-assisted implementation; operate the system; and review results through bounded acceptance checks.
 
-**How it's built.**
-- Python discovery adapters for Greenhouse and Ashby job boards
-- Rule-based eligibility (`ELIGIBLE` / `VERIFY` / `REJECT`) with application-history checks
-- SQLite records for jobs, decisions, CV versions, evidence links and approvals
-- Bounded model tool loop with schemas, time limits and an audit trail
-- Next.js interface with browser voice
-- 82 offline tests
+| Part | Responsibility |
+| --- | --- |
+| JARVIS | Existing dashboard and user-facing assistant |
+| JOEL X | Career research, eligibility/history checks and evidence-backed document drafts in a separate SQLite store |
+| AI Workforce | Supervised task routing, model execution records and human review |
 
-**Next.** Job-posting liveness checks, claim-level CV verification, and a supervised recruiter-email-to-interview workflow. Benchmarked against [Career Ops](https://github.com/career-ops-hq/career-ops).
+**Demonstrated.** Spoken career status, an approval summary that distinguishes separate queues, and one harmless task routed to an existing agent with one linked run and a result awaiting review. A recent staged suite passed 72 provider/routing/approval-security checks. This count is development evidence, not a measure of all-agent reliability.
 
----
+**Current implementation.** Python services, SQLite career records, JSON/JSONL task records, a React/TypeScript HUD and local Ollama planning. Restricted Claude execution is another implemented lane. Earlier Next.js/Groq and Hermes experiments are historical development stages.
 
-## JARVIS — command centre · `Pilot`
+**Next.** Diagnose the almost-five-minute planning latency and misleading outbound warning, then continue granular monitoring, durable task recovery and scoped-memory acceptance. No measured productivity, revenue or hiring gain is claimed.
 
-**Problem.** Career, business and inbox work were spread across a dozen tools with no single view of what needed attention.
-
-**What I built.** One command centre that shows tasks, agent activity, the career pipeline, and email and calendar context, with voice control and an approval queue for anything that acts on my behalf.
-
-**How it's built.**
-- Python services with a React/TypeScript HUD
-- Gmail and Google Calendar through Google OAuth
-- Local models through Ollama; free-tier cloud fallback for small tasks in development
-- Earlier cloud prototype on Hermes Agent with a localhost model router (October 2026)
-
-**Next.** Lower memory use on the laptop and one connected view of JOEL X and PDH.
-
----
-
-## AI Workforce — agent coordination · `In development`
-
-**Problem.** Running several specialist agents safely needs task tracking, limits on what each agent can do, and a human review step.
-
-**What I built.** The coordination layer behind JARVIS: an agent registry, task persistence, restricted model execution, review queues and recovery after a crash or restart.
-
-**How it's built.**
-- Python HTTP service with JSON/JSONL task and audit records
-- Claude CLI and Ollama execution with model routing
-- Specialist roles adapted from open-source agent collections (credited in the repo)
-
-**Next.** Merge the consolidation, Windows, model-routing and command-board work into one release.
+[Read the concise case study](JARVIS_CASE_STUDY.md). Source and private operational records remain private. This summary does not certify production autonomy or claim independent authorship of every component.
 
 ---
 
