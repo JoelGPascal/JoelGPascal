@@ -1,8 +1,8 @@
 # Joel Gabriel Pascal
 
-**Enterprise seller who builds the AI systems behind the sale.**
+**Enterprise technology sales · Practical AI workflow development**
 
-I've closed technology deals since 2017: enterprise APIs, data and SaaS, across EMEA and global accounts. Now I build the AI agents and revenue systems that make selling, hiring and deal flow run faster, with Claude, Python and MCP. I'm a UK national based in Tel Aviv.
+I've sold enterprise APIs, data and SaaS across EMEA and global accounts since 2017. I now apply that commercial experience to the design and evaluation of supervised AI workflows: defining the problem, directing AI-assisted implementation and checking what actually works. I'm a UK national based in Tel Aviv.
 
 `Enterprise GTM & Strategic Sales` · `AI agents` · `SaaS` · `APIs` · `Data` · `Revenue systems`
 
@@ -23,12 +23,23 @@ Every system started as a bottleneck in my own work: a job search, a sales pipel
 
 | Project | What it does | How it's built | Status |
 | --- | --- | --- | --- |
-| **JOEL X — AI career agent** | Finds live roles on official job boards, checks eligibility and application history, and prepares evidence-linked CVs for my approval | Python, SQLite, Greenhouse and Ashby adapters, bounded model tool loop, approval queue, Next.js interface · 82 offline tests | `In development` |
-| **JARVIS — command centre** | One dashboard for tasks, agent activity, career pipeline, email and calendar, with voice control | Python services, React/TypeScript HUD, Ollama local models, Gmail and Calendar integration | `Pilot` |
-| **AI Workforce** | Coordinates specialist agents with task tracking, review queues and recovery | Python, Claude and Ollama execution, model routing, JSON/JSONL audit records | `In development` |
+| **JOEL X — AI career agent** | Connects employer-board records, eligibility/application-history checks and evidence-backed document drafts for review | Python, SQLite and employer-board adapters; career records remain private | `Working local pilot` |
+| **JARVIS — command centre** | Brings recorded status, agent tasks and review summaries into the existing dashboard; career-status spoken playback demonstrated | Python services and React/TypeScript HUD | `Partial acceptance` |
+| **AI Workforce** | Routes bounded tasks to existing roles and records execution/results for human review | Python, Claude/Ollama execution and JSON/JSONL task records | `Basic delegation demonstrated` |
 | **PDH revenue engine** | Runs buyer and seller pipelines for my real estate business on GoHighLevel | CRM workflow design, buyer/seller matching, source validation, reporting | `In development` |
 | [**CRM Association Verifier**](https://github.com/JoelGPascal/crm-association-verifier) | Checks that contacts, deals and properties are correctly linked before anyone acts on them | JavaScript, Cloudflare Workers, read-only API access, fails closed · 41 tests | `Public prototype` |
 | [**Revenue Intake Demo**](https://github.com/JoelGPascal/pdh-revenue-intake-demo) | Turns raw property-listing inputs into clean, deduplicated records flagged for review | Pure Python, source tracking, synthetic data · 8 tests | `Public prototype` |
+
+### Featured case study: JARVIS & JOEL X
+
+**Problem:** fragmented research, drafts and agent outputs needed one reviewable workflow.
+
+**My contribution:** requirements, workflow and approval rules, AI-assisted implementation direction, output review and acceptance testing.
+
+**Demonstrated:** spoken career status, distinct approval queues, and one agent task with a linked run and a result left for review. The simple task also exposed slow local inference and a misleading warning; wider recovery and memory remain work in progress.
+
+[Read the concise case study](JARVIS_CASE_STUDY.md) · [Existing public demonstration](assets/joel-x-live-query-2026-11-01.png)
+
 
 Engineering detail for each system: [PROJECTS.md](PROJECTS.md)
 
@@ -36,8 +47,8 @@ Engineering detail for each system: [PROJECTS.md](PROJECTS.md)
 
 1. **Start from the revenue problem.** Map the real workflow before writing any code.
 2. **Keep humans on the decisions.** Agents research, draft and prepare; nothing is sent, submitted or changed without approval.
-3. **Make claims traceable.** Every figure in a generated CV or report links back to a verified source.
-4. **Prove it with tests,** then measure the time and revenue impact.
+3. **Make claims traceable.** Use recorded evidence, and leave missing support explicit for review.
+4. **Check behaviour and record limitations** before claiming time savings or business impact.
 
 ## Learning in public
 
